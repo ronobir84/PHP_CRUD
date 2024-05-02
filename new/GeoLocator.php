@@ -1,6 +1,6 @@
 <?php 
 class GeoLocator{
-    public function getLocations(){
+    public function getLocations($place){
         // latitude
         // longitude
         return array(
