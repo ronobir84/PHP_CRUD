@@ -233,7 +233,10 @@ if ($BBCodeEnable == false && $EmoticonEnabled ==false) {
     $em = new Emoticon($comment);
     $commentContend = $em->getContend(); 
 }
-    
+
+
+$fa = new Facade();
+$fa->findApartments("Sylhet", "Dhaka");
 
 
 

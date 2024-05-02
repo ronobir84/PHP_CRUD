@@ -4,11 +4,11 @@ class GoogleMap{
         // do.....something here
 
     }
-    public function drawLocation(){
+    public function drawLocation($location){
         // locate all the points using google map locate;
 
     }
-    public function dispatch(){
+    public function dispatch($divId){
         //draw the map is div with the div id...
     }
 }
