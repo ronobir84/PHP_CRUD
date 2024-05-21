@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 
     $result = mysqli_query($db, $sql);
     if ($result) {
-        header("Location: " . BASE_URL . "index.php?msg=New record created successfully.");
+        header("Location: " . BASE_URL . "index.php?msg");
     } else {
         echo "Failed: " . mysqli_error($db);
     }
@@ -69,7 +69,14 @@ if (isset($_POST['submit'])) {
                     <?php echo $row['title'] ?>
                 </td>
                 <td class="text-center bg-blue-500 font-medium text-gray-200">
-                    <?php echo $row['statas'] ?>
+                    <!-- <?php echo $row['statas'] ?> -->
+                    <?php 
+                    if($row['statas'] == 'Active'){
+                        echo "<span class='text-[#1F7153]'>Active</span>";
+                    }elseif($row['statas'] == 'Directive'){
+                        echo "<span class='text-[#DC2626]'>Directive</span>";
+                    }
+                    ?>
 
                 </td>
                 <td class=" text-center font-medium text-gray-200">

@@ -1,4 +1,3 @@
-<?php include './endpoints/add.php' ?>
 <?php include "./partials/header.php" ?>
 
 <div class="w-[800px]  h-[750px] bg-[#E8E8E8] mx-auto  ">
@@ -12,7 +11,7 @@
     </a>
 
     <div class="max-w-[480px] max-h-[550px]  mx-auto relative top-36 overflow-hidden z-10 bg-white p-8 rounded-lg shadow-md before:w-24 before:h-24 before:absolute before:bg-purple-500 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
-        <h2 class="text-2xl text-sky-900 font-bold mb-6">Update</h2>
+        <h2 class="text-2xl text-sky-900 font-bold mb-6">Create Data</h2>
 
         <form method="post" action="<?php echo BASE_URL . 'endpoints/add.php' ?>">
             <div class="mb-4">
